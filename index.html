@@ -3,15 +3,17 @@
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
-    <title>GSCA AI</title>
+    <title>GSCA AI Pro</title>
     
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="GSCA AI">
     <meta name="theme-color" content="#ffffff">
-    <link rel="apple-touch-icon" href="https://ui-avatars.com/api/?name=GSCA+AI&background=0ea5e9&color=fff&size=192">
     
-    <link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjoiR1NDQSBBSSIsInNob3J0X25hbWUiOiJHU0NBIEFJIiwiZGlzcGxheSI6InN0YW5kYWxvbmUiLCJiYWNrZ3JvdW5kX2NvbG9yIjoiI2ZmZmZmZiIsInRoZW1lX2NvbG9yIjoiIzBlYTVlOSIsImljb25zIjpbeyJzcmMiOiJodHRwczovL3VpLWF2YXRhcnMuY29tL2FwaS8/bmFtZT1HU0NBK0FJJmJhY2tncm91bmQ9MGVhNWU5JmNvbG9yPWZmZiZzaXplPTE5MiIsInR5cGVzIjoiaW1hZ2UvcG5nIiwic2l6ZXMiOiIxOTJ4MTkyIn1dfQ==">
+    <link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0iIzBlYTVlOSIgcng9IjExMiIvPjxwYXRoIGQ9Ik0yNTYgMTI4QzE4NS4zIDEyOCAxMjggMTg1LjMgMTI4IDI1NnM1Ny4zIDEyOCAxMjggMTI4IDEyOC01Ny4zIDEyOC0xMjgtNTcuMy0xMjgtMTI4LTEyOHptMCAyMTMuM2MtNDcuMSAwLTg1LjMtMzguMi04NS4zLTg1LjNzMzguMi04NS4zIDg1LjMtODUuMyA4NS4zIDM4LjIgODUuMyA4NS4zLTM4LjIgODUuMy04NS4zIDg1LjN6IiBmaWxsPSIjZmZmIi8+PC9zdmc+">
+    
+    <link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjoiR1NDQSBBSSBQcm8iLCJzaG9ydF9uYW1lIjoiR1NDQSBBSSIsInN0YXJ0X3VybCI6Ii4iLCJkaXNwbGF5Ijoic3RhbmRhbG9uZSIsImJhY2tncm91bmRfY29sb3ciOiIjZmZmZmZmIiwidGhlbWVfY29sb3ciOiIjMGVhNWU5IiwiaWNvbnMiOlt7InNyYyI6ImRhdGE6aW1hZ2Uvc3ZnK3htbDtiYXNlNjQsUEhOMlpTQjRiV3h1Y3owaWFIUjBjRG92TDNkM2R5NTNNeTV2Y21jdk1qQXdNQzl6ZG1jaUlIWnBaWGRDYjNnOUlqQWdNQ0ExTVRJZ05URXlJam84Y21WamRDQjNhV1IwYUQwaU5URXlJaUJvWldsbmFIUTlJalV4TWlJZ1ptbHNiRDBpSXpCbFlUVmxPU0lnY25nOUlqRXhNaUl2UGp4d1lYUm9JR1E5SWsweU5UWWdNVEl0UXpFNE5TNHpJREV5T0NBeE1qZ2dNVGcxTGpNZ01USTBJREkxTmlNMU55NHpJREV5T0NBeEdhRDRJREV5T0NBeE1qZ3ROVGN1TXlBeE1qZ3RNVEk0TFRVM0xqTXRNVEk0TFRFeU9DMHhNamg2YlRBZ01qRXpMak5qTFRRM0xqRWdNQzB4TlM0ekxUTTRMakl0T0RVdU15MDROUzR6Y3pNNExqSXRPRFV1TXlBNE5TNHpJRGcxTGpNZ09EVXVNekFwREc4eE1qZ2dNRFV1TXlBeE1qZ3RNVFUxT0MweE1qY3hOUzR6Y3pZME1qRXpJR1pwYkd3OUlqSm1abVlpTHo0cEM5eDNkMmMrIiwic2l6ZXMiOiI1MTJ4NTEyIiwidHlwZSI6ImltYWdlL3N2Zyt4bWwifV19">
 
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries,typography"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -71,11 +73,15 @@
         .prose ul, .prose ol { padding-left: 1.5rem; margin-bottom: 0.75rem; }
         .prose ul { list-style-type: disc; }
         .prose ol { list-style-type: decimal; }
+        .prose table { width: 100%; border-collapse: collapse; margin-bottom: 1rem; }
+        .prose th, .prose td { border: 1px solid rgba(156, 163, 175, 0.3); padding: 0.5rem; }
         .msg-actions { opacity: 0; transition: opacity 0.2s; }
         .message-row:hover .msg-actions { opacity: 1; }
         @media (max-width: 768px) { .msg-actions { opacity: 1; } } /* Always show on mobile */
         .code-copy-btn { position: absolute; top: 8px; right: 8px; background: rgba(255, 255, 255, 0.15); color: white; border: none; border-radius: 6px; padding: 4px 8px; font-size: 12px; cursor: pointer; display: flex; align-items: center; gap: 4px; z-index: 5; opacity: 0; transition: opacity 0.2s; backdrop-filter: blur(4px); pointer-events: auto; }
         pre:hover .code-copy-btn { opacity: 1; }
+        .code-copy-btn:hover { background: rgba(255, 255, 255, 0.35); }
+        .code-copy-btn:active { background: rgba(255, 255, 255, 0.5); transform: scale(0.95); }
         @keyframes blink-cursor { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
         .streaming-cursor::after { content: '▎'; animation: blink-cursor 1s infinite; color: #0ea5e9; font-weight: bold; margin-left: 1px; }
     </style>
@@ -84,7 +90,7 @@
 
     <div id="loading" class="fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-white dark:bg-[#0f172a] transition-opacity duration-500">
         <div class="w-12 h-12 border-4 border-primary border-t-transparent rounded-full animate-spin mb-4"></div>
-        <p class="text-slate-600 dark:text-slate-300 font-medium">Starting GSCA AI...</p>
+        <p class="text-slate-600 dark:text-slate-300 font-medium">Starting GSCA AI Pro...</p>
     </div>
 
     <div id="app" class="hidden flex-1 flex w-full h-full relative">
@@ -101,8 +107,8 @@
                             <span class="material-symbols-outlined text-[20px]">psychology</span>
                         </div>
                         <div class="flex flex-col">
-                            <span class="font-bold text-sm tracking-wide leading-tight">GSCA AI</span>
-                            <span class="text-[10px] text-slate-500">App Interface</span>
+                            <span class="font-bold text-sm tracking-wide leading-tight">GSCA AI Pro</span>
+                            <span class="text-[10px] text-slate-500">Native App Mode</span>
                         </div>
                     </div>
                 </div>
@@ -123,18 +129,18 @@
                     <span class="material-symbols-outlined text-xl">download</span> Export Chat
                 </button>
                 <button id="clear-current-chat-btn" class="flex items-center gap-3 px-3 py-2.5 mb-1 rounded-xl hover:bg-orange-50 dark:hover:bg-orange-900/20 text-orange-600 dark:text-orange-400 text-sm font-medium transition-colors">
-                    <span class="material-symbols-outlined text-xl">clear_all</span> Clear Current Chat
+                    <span class="material-symbols-outlined text-xl">clear_all</span> Clear Current
                 </button>
                 <button id="clear-data-btn" class="flex items-center gap-3 px-3 py-2.5 mb-1 rounded-xl hover:bg-red-50 dark:hover:bg-red-900/20 text-red-600 dark:text-red-400 text-sm font-medium transition-colors">
                     <span class="material-symbols-outlined text-xl">delete_sweep</span> Clear All Data
                 </button>
                 <button id="open-settings-btn" class="flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-slate-200 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 text-sm font-medium transition-colors">
-                    <span class="material-symbols-outlined text-xl">tune</span> AI Settings
+                    <span class="material-symbols-outlined text-xl">tune</span> AI Pro Settings
                 </button>
                 <div class="flex items-center justify-between px-3 py-2 mt-2 bg-white dark:bg-[#1e293b] rounded-lg border border-slate-200 dark:border-slate-700">
                     <div class="flex items-center gap-2">
                         <div class="size-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)] animate-pulse"></div>
-                        <span id="current-model-display" class="text-xs font-medium text-slate-600 dark:text-slate-300 truncate max-w-[120px]">deepseek/deepseek-chat</span>
+                        <span id="current-model-display" class="text-xs font-medium text-slate-600 dark:text-slate-300 truncate max-w-[120px]">deepseek-chat</span>
                     </div>
                 </div>
             </div>
@@ -149,7 +155,7 @@
                     <div class="size-6 rounded-md bg-gradient-to-tr from-primary to-blue-600 flex items-center justify-center text-white">
                         <span class="material-symbols-outlined text-[14px]">psychology</span>
                     </div>
-                    GSCA AI
+                    GSCA AI Pro
                 </h1>
                 <button id="theme-toggle-mobile" class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-300">
                     <span class="material-symbols-outlined theme-icon-mob">dark_mode</span>
@@ -165,37 +171,37 @@
             <div id="chat-container" class="flex-1 overflow-y-auto custom-scrollbar flex flex-col items-center pt-6 md:pt-10 pb-40 px-4 md:px-0 w-full scroll-smooth">
                 <div id="welcome-screen" class="w-full max-w-[800px] flex flex-col gap-8 mt-4 md:mt-12 fade-enter">
                     <div class="text-center space-y-3">
-                        <div class="inline-flex items-center justify-center p-4 rounded-2xl bg-blue-50 dark:bg-blue-900/20 text-primary mb-2">
+                        <div class="inline-flex items-center justify-center p-4 rounded-2xl bg-blue-50 dark:bg-blue-900/20 text-primary mb-2 shadow-sm">
                             <span class="material-symbols-outlined text-5xl">psychology</span>
                         </div>
                         <h1 class="text-3xl md:text-5xl font-bold tracking-tight text-slate-800 dark:text-white">
-                            GSCA AI
+                            GSCA AI Pro
                         </h1>
                         <h2 class="text-xl md:text-2xl font-medium text-slate-500 dark:text-slate-400">
-                            Smart Assistant. <span class="text-gradient">How can I help you?</span>
+                            DeepSeek Engine. <span class="text-gradient">How can I help you?</span>
                         </h2>
                     </div>
 
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full mt-6 px-2 md:px-0">
                         <button class="prompt-btn flex items-center gap-4 p-4 rounded-2xl bg-white dark:bg-[#1e293b] hover:shadow-md transition-all text-left border border-slate-200 dark:border-slate-700 group">
-                            <div class="p-3 rounded-xl bg-blue-50 dark:bg-blue-500/10 text-blue-500 group-hover:scale-110 transition-transform"><span class="material-symbols-outlined">calculate</span></div>
+                            <div class="p-3 rounded-xl bg-blue-50 dark:bg-blue-500/10 text-blue-500 group-hover:scale-110 transition-transform"><span class="material-symbols-outlined">code_blocks</span></div>
+                            <div class="flex-1">
+                                <h3 class="font-semibold text-slate-800 dark:text-slate-200 text-sm">Write Code (HTML/JS)</h3>
+                                <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Build a fully responsive webpage</p>
+                            </div>
+                        </button>
+                        <button class="prompt-btn flex items-center gap-4 p-4 rounded-2xl bg-white dark:bg-[#1e293b] hover:shadow-md transition-all text-left border border-slate-200 dark:border-slate-700 group">
+                            <div class="p-3 rounded-xl bg-emerald-50 dark:bg-emerald-500/10 text-emerald-500 group-hover:scale-110 transition-transform"><span class="material-symbols-outlined">calculate</span></div>
                             <div class="flex-1">
                                 <h3 class="font-semibold text-slate-800 dark:text-slate-200 text-sm">Solve Complex Math</h3>
                                 <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Help me understand algebra or calculus</p>
                             </div>
                         </button>
                         <button class="prompt-btn flex items-center gap-4 p-4 rounded-2xl bg-white dark:bg-[#1e293b] hover:shadow-md transition-all text-left border border-slate-200 dark:border-slate-700 group">
-                            <div class="p-3 rounded-xl bg-emerald-50 dark:bg-emerald-500/10 text-emerald-500 group-hover:scale-110 transition-transform"><span class="material-symbols-outlined">code_blocks</span></div>
-                            <div class="flex-1">
-                                <h3 class="font-semibold text-slate-800 dark:text-slate-200 text-sm">Web Development Setup</h3>
-                                <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Write HTML/JS/CSS for a new project</p>
-                            </div>
-                        </button>
-                        <button class="prompt-btn flex items-center gap-4 p-4 rounded-2xl bg-white dark:bg-[#1e293b] hover:shadow-md transition-all text-left border border-slate-200 dark:border-slate-700 group">
                             <div class="p-3 rounded-xl bg-purple-50 dark:bg-purple-500/10 text-purple-500 group-hover:scale-110 transition-transform"><span class="material-symbols-outlined">description</span></div>
                             <div class="flex-1">
                                 <h3 class="font-semibold text-slate-800 dark:text-slate-200 text-sm">Analyze Documents</h3>
-                                <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Upload a .txt or .csv and ask questions</p>
+                                <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Upload .txt or .csv and ask anything</p>
                             </div>
                         </button>
                         <button class="prompt-btn flex items-center gap-4 p-4 rounded-2xl bg-white dark:bg-[#1e293b] hover:shadow-md transition-all text-left border border-slate-200 dark:border-slate-700 group">
@@ -213,7 +219,7 @@
                 <div id="typing-indicator" class="w-full max-w-[800px] px-2 md:px-0 hidden mt-4">
                     <div class="flex gap-4">
                         <div class="size-8 rounded-xl bg-primary flex items-center justify-center shrink-0 mt-1 shadow-md">
-                            <span class="material-symbols-outlined text-white text-[18px]">smart_toy</span>
+                            <span class="material-symbols-outlined text-white text-[18px]">psychology</span>
                         </div>
                         <div class="flex flex-col gap-2 justify-center bg-white dark:bg-[#1e293b] px-5 py-4 rounded-2xl rounded-tl-none border border-slate-100 dark:border-slate-800 shadow-sm">
                             <div class="typing-indicator flex gap-1.5">
@@ -267,7 +273,7 @@
 
                     <div class="text-center mt-3 flex justify-center items-center gap-2">
                         <p class="text-[10px] md:text-xs text-slate-400 dark:text-slate-500 font-medium">
-                            Powered by OpenRouter API • GSCA App Interface
+                            Powered by DeepSeek / OpenRouter • Full UX Restored
                         </p>
                     </div>
                 </div>
@@ -279,17 +285,17 @@
         <div class="bg-white dark:bg-[#0f172a] w-full max-w-lg rounded-3xl shadow-2xl overflow-hidden border border-slate-200 dark:border-slate-800 transform scale-95 transition-transform duration-300" id="settings-content">
             <div class="px-6 py-5 border-b border-slate-100 dark:border-slate-800 flex justify-between items-center bg-slate-50 dark:bg-[#1e293b]">
                 <h3 class="text-xl font-bold text-slate-800 dark:text-white flex items-center gap-2">
-                    <span class="material-symbols-outlined text-primary">tune</span> GSCA Settings
+                    <span class="material-symbols-outlined text-primary">tune</span> AI Pro Settings
                 </h3>
                 <button id="close-settings-btn" class="p-1.5 rounded-full bg-slate-200 dark:bg-slate-700 text-slate-600 dark:text-slate-300 hover:bg-red-100 hover:text-red-600 transition-colors">
                     <span class="material-symbols-outlined text-sm">close</span>
                 </button>
             </div>
 
-            <div class="p-6 flex flex-col gap-6 max-h-[70vh] overflow-y-auto custom-scrollbar">
+            <div class="p-6 flex flex-col gap-5 max-h-[70vh] overflow-y-auto custom-scrollbar">
                 
-                <div class="flex flex-col gap-2">
-                    <label class="text-sm font-semibold text-slate-700 dark:text-slate-300">Voice Recognition Language</label>
+                <div class="flex flex-col gap-1.5">
+                    <label class="text-sm font-semibold text-slate-700 dark:text-slate-300">Voice Dictation Language</label>
                     <div class="relative">
                         <select id="recog-lang-input" class="w-full rounded-xl border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-[#1e293b] text-slate-900 dark:text-slate-100 focus:ring-2 focus:ring-primary focus:border-primary pl-10 py-3 appearance-none font-medium">
                             <option value="">Auto-Detect (Browser Default)</option>
@@ -302,7 +308,17 @@
                     </div>
                 </div>
 
-                <div class="flex flex-col gap-2">
+                <div class="flex flex-col gap-1.5">
+                    <label class="text-sm font-semibold text-slate-700 dark:text-slate-300">AI Speaking Voice</label>
+                    <div class="relative">
+                        <select id="voice-input" class="w-full rounded-xl border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-[#1e293b] text-slate-900 dark:text-slate-100 focus:ring-2 focus:ring-primary pl-10 py-3 appearance-none font-medium">
+                            <option value="default">System Default</option>
+                        </select>
+                        <span class="material-symbols-outlined absolute left-3 top-3.5 text-slate-400 text-[20px]">record_voice_over</span>
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-1.5">
                     <label class="text-sm font-semibold text-slate-700 dark:text-slate-300">Select Chat Model</label>
                     <div class="relative">
                         <select id="model-input" class="w-full rounded-xl border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-[#1e293b] text-slate-900 dark:text-slate-100 focus:ring-2 focus:ring-primary focus:border-primary pl-10 py-3 appearance-none font-medium">
@@ -318,18 +334,26 @@
                         <input id="custom-model-input" type="text" class="w-full rounded-xl border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-[#1e293b] text-slate-900 dark:text-slate-100 focus:ring-2 focus:ring-primary px-3 py-3 font-medium placeholder-slate-400" placeholder="e.g. google/gemini-flash-1.5" />
                     </div>
                 </div>
-
-                <div class="flex flex-col gap-2">
-                    <label class="text-sm font-semibold text-slate-700 dark:text-slate-300">Text-to-Speech Voice</label>
-                    <div class="relative">
-                        <select id="voice-input" class="w-full rounded-xl border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-[#1e293b] text-slate-900 dark:text-slate-100 focus:ring-2 focus:ring-primary pl-10 py-3 appearance-none font-medium">
-                            <option value="default">System Default</option>
-                        </select>
-                        <span class="material-symbols-outlined absolute left-3 top-3.5 text-slate-400 text-[20px]">record_voice_over</span>
-                    </div>
+                
+                <div class="flex flex-col gap-1.5">
+                    <label class="text-sm font-semibold text-slate-700 dark:text-slate-300 flex justify-between">
+                        <span>Memory Context Limit</span>
+                        <span id="context-val" class="text-primary">10 Messages</span>
+                    </label>
+                    <input type="range" id="context-input" min="2" max="30" step="2" value="10" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer dark:bg-slate-700 accent-primary">
+                    <p class="text-[10px] text-slate-500">How many previous messages the AI remembers.</p>
                 </div>
 
-                <div class="flex flex-col gap-2">
+                <div class="flex flex-col gap-1.5">
+                    <label class="text-sm font-semibold text-slate-700 dark:text-slate-300 flex justify-between">
+                        <span>Temperature (Creativity)</span>
+                        <span id="temp-val" class="text-primary">0.7</span>
+                    </label>
+                    <input type="range" id="temp-input" min="0" max="2" step="0.1" value="0.7" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer dark:bg-slate-700 accent-primary">
+                    <p class="text-[10px] text-slate-500">Lower = Precise & Logical. Higher = Creative.</p>
+                </div>
+
+                <div class="flex flex-col gap-1.5">
                     <label class="text-sm font-semibold text-slate-700 dark:text-slate-300">System Prompt</label>
                     <textarea id="system-prompt-input" class="w-full rounded-xl border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-[#1e293b] text-slate-900 dark:text-slate-100 focus:ring-2 focus:ring-primary p-3.5 text-sm leading-relaxed" rows="3" placeholder="You are a helpful AI..."></textarea>
                 </div>
@@ -338,7 +362,7 @@
             <div class="px-6 py-4 border-t border-slate-100 dark:border-slate-800 bg-slate-50 dark:bg-[#1e293b] flex justify-end gap-3">
                 <button id="cancel-settings-btn" class="px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">Cancel</button>
                 <button id="save-settings-btn" class="px-5 py-2.5 rounded-xl text-sm font-bold bg-primary text-white hover:bg-primary-hover shadow-md transition-colors flex items-center gap-2">
-                    <span class="material-symbols-outlined text-[18px]">save</span> Save
+                    <span class="material-symbols-outlined text-[18px]">save</span> Save Config
                 </button>
             </div>
         </div>
@@ -353,7 +377,7 @@
             langPrefix: 'hljs language-'
         });
 
-        // The 30 API Keys provided, securely encoded in Base64 [cite: 321]
+        // Your 30 API Keys provided, securely encoded in Base64
         const _kData = [
             "c2stb3ItdjEtYzk2NzUwYTE3NDIyYWU2YmYwZWNkYWZjYWYxODhkNTczNjA0MWRhNzdmMDUzZGIzZGZiZGFiZDU0ZDUxYWE3MA==",
             "c2stb3ItdjEtZmJkNGU4ZWI0Nzg4Nzg5OGQzMGY3YTg2Mjg5MDM5MDMyZmQzMjZiMTlkNzMwYWQ3ODE2NzNiMTk0MjEwMzEyOA==",
@@ -404,7 +428,9 @@
                 model: localStorage.getItem('gsca_uai_m') || 'deepseek/deepseek-chat',
                 voiceURI: localStorage.getItem('gsca_uai_v') || 'default',
                 recogLang: localStorage.getItem('gsca_uai_lang') || '',
-                systemPrompt: localStorage.getItem('gsca_uai_p') || 'You are GSCA AI, a highly advanced assistant created for Gazipur Shaheen Cadet Academy. You provide accurate, helpful, and highly professional answers in any language the user prefers.',
+                temperature: parseFloat(localStorage.getItem('gsca_uai_temp')) || 0.7,
+                contextLimit: parseInt(localStorage.getItem('gsca_uai_ctx')) || 10,
+                systemPrompt: localStorage.getItem('gsca_uai_p') || 'You are GSCA AI Pro, an elite advanced assistant created for Gazipur Shaheen Cadet Academy. You provide extremely accurate, helpful, and highly professional answers in any language the user prefers.',
                 messages: [],
                 history: JSON.parse(localStorage.getItem('gsca_uai_history')) || [],
                 currentChatId: generateId(),
@@ -436,6 +462,10 @@
                 cancelSettingsBtn: document.getElementById('cancel-settings-btn'),
                 saveSettingsBtn: document.getElementById('save-settings-btn'),
                 recogLangInput: document.getElementById('recog-lang-input'),
+                tempInput: document.getElementById('temp-input'),
+                tempVal: document.getElementById('temp-val'),
+                contextInput: document.getElementById('context-input'),
+                contextVal: document.getElementById('context-val'),
 
                 modelInput: document.getElementById('model-input'),
                 customModelContainer: document.getElementById('custom-model-container'),
@@ -475,10 +505,19 @@
                 els.customModelContainer.classList.remove('hidden');
             }
 
+            // Sync Settings UI
+            els.tempInput.value = state.temperature;
+            els.tempVal.textContent = state.temperature;
+            els.contextInput.value = state.contextLimit;
+            els.contextVal.textContent = state.contextLimit + " Messages";
+
+            els.tempInput.addEventListener('input', (e) => els.tempVal.textContent = e.target.value);
+            els.contextInput.addEventListener('input', (e) => els.contextVal.textContent = e.target.value + " Messages");
+
             let availableVoices = [];
             const populateVoices = () => {
                 availableVoices = window.speechSynthesis.getVoices();
-                els.voiceInput.innerHTML = '<option value="default">System Default</option>';
+                els.voiceInput.innerHTML = '<option value="default">System Default Voice</option>';
                 availableVoices.forEach(voice => {
                     const option = document.createElement('option');
                     option.value = voice.voiceURI;
@@ -524,6 +563,10 @@
             const openSettings = () => {
                 els.systemPromptInput.value = state.systemPrompt;
                 els.recogLangInput.value = state.recogLang;
+                els.tempInput.value = state.temperature;
+                els.tempVal.textContent = state.temperature;
+                els.contextInput.value = state.contextLimit;
+                els.contextVal.textContent = state.contextLimit + " Messages";
                 els.settingsModal.classList.remove('hidden');
                 setTimeout(() => els.settingsModal.classList.remove('opacity-0'), 10);
             };
@@ -544,11 +587,15 @@
                 state.voiceURI = els.voiceInput.value;
                 state.systemPrompt = els.systemPromptInput.value;
                 state.recogLang = els.recogLangInput.value;
+                state.temperature = parseFloat(els.tempInput.value);
+                state.contextLimit = parseInt(els.contextInput.value);
 
                 localStorage.setItem('gsca_uai_m', state.model);
                 localStorage.setItem('gsca_uai_v', state.voiceURI);
                 localStorage.setItem('gsca_uai_p', state.systemPrompt);
                 localStorage.setItem('gsca_uai_lang', state.recogLang);
+                localStorage.setItem('gsca_uai_temp', state.temperature);
+                localStorage.setItem('gsca_uai_ctx', state.contextLimit);
 
                 els.currentModelDisplay.textContent = state.model.split('/').pop();
                 showStatus('Settings Updated Successfully!', 'success');
@@ -710,7 +757,7 @@
                         els.filePreviewExt.textContent = ext;
                         const reader = new FileReader();
                         reader.onload = (ev) => {
-                            state.currentFileText = `\n\n[File Content: ${file.name}]\n\`\`\`\n${ev.target.result}\n\`\`\`\n`;
+                            state.currentFileText = `\n\n[File Content of ${file.name}]\n\`\`\`\n${ev.target.result}\n\`\`\`\n`;
                             state.currentImageBase64 = null;
                             els.imagePreview.classList.add('hidden');
                             els.filePreviewIcon.classList.remove('hidden');
@@ -728,7 +775,7 @@
                 els.fileUpload.value = '';
             });
 
-            // Speech Recognition Setup (Any Language)
+            // Speech Recognition Setup (Multi-Language)
             const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
             let recognition;
             if (SpeechRecognition) {
@@ -751,7 +798,6 @@
                     if (els.micIcon.classList.contains('animate-pulse')) {
                         recognition.stop();
                     } else {
-                        // Dynamically set language based on settings or let browser auto-detect
                         if(state.recogLang) { recognition.lang = state.recogLang; } 
                         else { recognition.lang = ''; }
                         recognition.start();
@@ -781,9 +827,10 @@
                 textarea.style.position = 'fixed';
                 document.body.appendChild(textarea);
                 textarea.select();
-                try { document.execCommand('copy'); if(btn) btn.innerHTML = 'Copied!'; } 
+                try { document.execCommand('copy'); if(btn) btn.innerHTML = '<span class="material-symbols-outlined text-[14px]">check</span> Copied!'; } 
                 catch (err) {}
                 document.body.removeChild(textarea);
+                if(btn) setTimeout(() => btn.innerHTML = '<span class="material-symbols-outlined text-[14px]">content_copy</span> Copy', 2000);
             }
 
             window.addCodeCopyButtons = (container) => {
@@ -798,7 +845,7 @@
                         e.stopPropagation(); e.preventDefault();
                         const code = pre.querySelector('code')?.innerText || '';
                         if (navigator.clipboard && window.isSecureContext) {
-                            navigator.clipboard.writeText(code).then(() => { btn.innerHTML = 'Copied!'; setTimeout(() => btn.innerHTML = 'Copy', 2000); }).catch(() => fallbackCopy(code, btn));
+                            navigator.clipboard.writeText(code).then(() => { btn.innerHTML = '<span class="material-symbols-outlined text-[14px]">check</span> Copied!'; setTimeout(() => btn.innerHTML = '<span class="material-symbols-outlined text-[14px]">content_copy</span> Copy', 2000); }).catch(() => fallbackCopy(code, btn));
                         } else { fallbackCopy(code, btn); }
                     });
                     pre.style.position = 'relative'; pre.appendChild(btn);
@@ -822,21 +869,28 @@
                     contentHtml = `<div class="chat-bubble-user px-5 py-3 max-w-[85%] shadow-sm text-[15px] leading-relaxed relative border border-slate-100 dark:border-slate-700">
                         ${msgObj.content.image ? `<img src="${msgObj.content.image}" class="max-w-[200px] rounded-lg mb-2 border border-slate-200 dark:border-slate-700">` : ''}
                         <div class="whitespace-pre-wrap font-medium">${safeText}</div>
+                        <div class="msg-actions absolute -left-12 top-2 flex gap-1 bg-white dark:bg-[#1e293b] rounded-full shadow-sm border border-slate-200 dark:border-slate-700 p-1">
+                            <button onclick="editMessage('${msgObj.id}')" class="rounded-full hover:text-primary text-slate-400" title="Edit"><span class="material-symbols-outlined text-[16px]">edit</span></button>
+                        </div>
                     </div>`;
                 } else {
                     const parsedMarkdown = marked.parse(msgObj.content.text);
                     const safeMarkdown = DOMPurify.sanitize(parsedMarkdown);
+                    const showContinue = state.lastFinishReason === 'length' && msgObj.id === state.messages[state.messages.length - 1]?.id;
                     contentHtml = `
                     <div class="flex gap-4 w-full max-w-full">
                         <div class="size-8 rounded-xl bg-gradient-to-tr from-primary to-blue-600 shrink-0 mt-1 flex items-center justify-center text-white shadow-md">
                             <span class="material-symbols-outlined text-[18px]">psychology</span>
                         </div>
                         <div class="flex flex-col gap-1 w-full overflow-hidden">
-                            <div class="font-bold text-sm text-slate-800 dark:text-slate-200">GSCA AI</div>
+                            <div class="font-bold text-sm text-slate-800 dark:text-slate-200">GSCA AI Pro</div>
                             <div class="prose dark:prose-invert max-w-none text-[15px] leading-relaxed chat-bubble-ai">${safeMarkdown}</div>
+                            ${showContinue ? `<div class="mt-2 flex items-center gap-2"><button onclick="continueGeneration('${msgObj.id}')" class="flex items-center gap-1 px-3 py-1.5 rounded-lg bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 text-xs font-semibold hover:bg-blue-200 dark:hover:bg-blue-800/40 transition"><span class="material-symbols-outlined text-[14px]">play_arrow</span> Continue Generating</button></div>` : ''}
                             <div class="msg-actions flex items-center gap-2 mt-2">
-                                <button onclick="copyText('${msgObj.id}')" class="flex items-center gap-1 px-2 py-1 rounded bg-slate-100 dark:bg-slate-800 hover:text-primary text-slate-500 text-xs font-semibold transition" title="Copy"><span class="material-symbols-outlined text-[14px]">content_copy</span> Copy</button>
+                                <button onclick="copyText('${msgObj.id}')" class="flex items-center gap-1 px-2 py-1 rounded bg-slate-100 dark:bg-slate-800 hover:text-primary text-slate-500 text-xs font-semibold transition" title="Copy Text"><span class="material-symbols-outlined text-[14px]">content_copy</span> Copy</button>
                                 <button onclick="speakText(document.getElementById('msg-${msgObj.id}').querySelector('.prose').innerText)" class="flex items-center gap-1 px-2 py-1 rounded bg-slate-100 dark:bg-slate-800 hover:text-green-500 text-slate-500 text-xs font-semibold transition" title="Read Aloud"><span class="material-symbols-outlined text-[14px]">volume_up</span> Speak</button>
+                                <button onclick="regenerateMessage('${msgObj.id}')" class="flex items-center gap-1 px-2 py-1 rounded bg-purple-50 dark:bg-purple-900/20 text-purple-600 dark:text-purple-400 hover:text-purple-800 text-xs font-semibold transition" title="Regenerate Answer"><span class="material-symbols-outlined text-[14px]">refresh</span> Regenerate</button>
+                                <button onclick="deleteMessage('${msgObj.id}')" class="flex items-center gap-1 px-2 py-1 rounded bg-red-50 dark:bg-red-900/20 text-red-600 hover:text-red-800 text-xs font-semibold transition" title="Delete"><span class="material-symbols-outlined text-[14px]">delete</span></button>
                             </div>
                         </div>
                     </div>`;
@@ -858,8 +912,14 @@
                     <div class="flex gap-4 w-full max-w-full">
                         <div class="size-8 rounded-xl bg-gradient-to-tr from-primary to-blue-600 shrink-0 mt-1 flex items-center justify-center text-white shadow-md"><span class="material-symbols-outlined text-[18px]">psychology</span></div>
                         <div class="flex flex-col gap-1 w-full overflow-hidden">
-                            <div class="font-bold text-sm text-slate-800 dark:text-slate-200">GSCA AI</div>
+                            <div class="font-bold text-sm text-slate-800 dark:text-slate-200">GSCA AI Pro</div>
                             <div class="prose dark:prose-invert max-w-none text-[15px] leading-relaxed chat-bubble-ai streaming-cursor"></div>
+                            <div class="msg-actions flex items-center gap-2 mt-2" style="opacity:0;">
+                                <button class="copy-ai-btn flex items-center gap-1 px-2 py-1 rounded bg-slate-100 dark:bg-slate-800 hover:text-primary text-slate-500 text-xs font-semibold transition"><span class="material-symbols-outlined text-[14px]">content_copy</span> Copy</button>
+                                <button class="speak-ai-btn flex items-center gap-1 px-2 py-1 rounded bg-slate-100 dark:bg-slate-800 hover:text-green-500 text-slate-500 text-xs font-semibold transition"><span class="material-symbols-outlined text-[14px]">volume_up</span> Speak</button>
+                                <button class="regenerate-ai-btn flex items-center gap-1 px-2 py-1 rounded bg-purple-50 dark:bg-purple-900/20 text-purple-600 hover:text-purple-800 text-xs font-semibold transition"><span class="material-symbols-outlined text-[14px]">refresh</span> Regenerate</button>
+                            </div>
+                            <div class="continue-container mt-2 hidden"></div>
                         </div>
                     </div>`;
                 els.messagesContainer.appendChild(wrapper);
@@ -871,13 +931,86 @@
                 if (!proseEl) return;
                 const text = proseEl.innerText;
                 if (navigator.clipboard && window.isSecureContext) {
-                    navigator.clipboard.writeText(text).then(() => showStatus('Text Copied!', 'success')).catch(() => fallbackCopy(text, null));
-                } else { fallbackCopy(text, null); }
+                    navigator.clipboard.writeText(text).then(() => showStatus('Full Text Copied!', 'success')).catch(() => fallbackCopy(text, null));
+                } else { fallbackCopy(text, null); showStatus('Text Copied!', 'success'); }
+            };
+
+            window.deleteMessage = (id) => {
+                state.messages = state.messages.filter(m => m.id !== id);
+                const el = document.getElementById(`msg-${id}`);
+                if (el) el.remove();
+                if (state.messages.length === 0) {
+                    els.messagesContainer.classList.add('hidden');
+                    els.welcomeScreen.classList.remove('hidden');
+                }
+                saveCurrentSession();
+            };
+
+            window.editMessage = (id) => {
+                const msgIndex = state.messages.findIndex(m => m.id === id);
+                if (msgIndex > -1) {
+                    const text = state.messages[msgIndex].content.text;
+                    els.userInput.value = text;
+                    els.userInput.style.height = 'auto';
+                    els.userInput.style.height = els.userInput.scrollHeight + 'px';
+                    els.userInput.focus();
+                    els.sendBtn.disabled = false;
+
+                    const toDelete = state.messages.slice(msgIndex);
+                    toDelete.forEach(m => {
+                        const el = document.getElementById(`msg-${m.id}`);
+                        if (el) el.remove();
+                    });
+                    state.messages = state.messages.slice(0, msgIndex);
+
+                    if (state.messages.length === 0) {
+                        els.messagesContainer.classList.add('hidden');
+                        els.welcomeScreen.classList.remove('hidden');
+                    }
+                    saveCurrentSession();
+                }
+            };
+
+            window.regenerateMessage = (aiMsgId) => {
+                const idx = state.messages.findIndex(m => m.id === aiMsgId);
+                if (idx === -1 || state.messages[idx].role !== 'assistant') return;
+
+                state.messages = state.messages.slice(0, idx);
+                const el = document.getElementById(`msg-${aiMsgId}`);
+                if (el) el.remove();
+                for (let i = idx; i < state.messages.length; i++) {
+                    const laterMsg = state.messages[i];
+                    if (laterMsg) {
+                        const laterEl = document.getElementById(`msg-${laterMsg.id}`);
+                        if (laterEl) laterEl.remove();
+                    }
+                }
+                state.messages = state.messages.slice(0, idx);
+                if (state.messages.length > 0 && state.messages[state.messages.length - 1].role === 'user') {
+                    generateAIResponse();
+                } else {
+                    showStatus('Cannot regenerate: no user message found', 'error');
+                }
+                saveCurrentSession();
+            };
+
+            window.continueGeneration = (aiMsgId) => {
+                const idx = state.messages.findIndex(m => m.id === aiMsgId);
+                if (idx === -1) return;
+                const continueMsg = { id: generateId(), role: 'user', content: { text: 'continue generating where you left off', image: null }, timestamp: Date.now() };
+                state.messages.push(continueMsg);
+                renderMessage(continueMsg);
+                saveCurrentSession();
+                generateAIResponse();
             };
 
             const enhanceWithMemory = () => {
                 const apiMessages = [{ role: "system", content: state.systemPrompt }];
-                const recentMessages = state.messages.slice(-8);
+                
+                // Use the setting value to trim history (Context Limit)
+                const limit = state.contextLimit || 10;
+                const recentMessages = state.messages.slice(-limit);
+                
                 recentMessages.forEach(msg => {
                     if (msg.content.image) {
                         apiMessages.push({ role: msg.role, content: [ { type: "text", text: msg.content.text || "Image context" }, { type: "image_url", image_url: { url: msg.content.image } } ] });
@@ -900,8 +1033,11 @@
 
                 const wrapper = createAssistantMessageShell(aiMsg);
                 const proseEl = wrapper.querySelector('.prose');
+                const continueContainer = wrapper.querySelector('.continue-container');
+                const actionsDiv = wrapper.querySelector('.msg-actions');
                 let fullContent = '';
                 state.abortController = new AbortController();
+                let finishReason = null;
                 
                 // API Rotation Logic
                 let retryCount = 0;
@@ -914,22 +1050,26 @@
                         const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
                             method: "POST",
                             headers: { "Authorization": `Bearer ${activeKey}`, "HTTP-Referer": window.location.href, "X-Title": "GSCA AI APP", "Content-Type": "application/json" },
-                            body: JSON.stringify({ model: state.model, messages: enhanceWithMemory(), stream: true }),
+                            body: JSON.stringify({ 
+                                model: state.model, 
+                                messages: enhanceWithMemory(), 
+                                stream: true,
+                                temperature: state.temperature
+                            }),
                             signal: state.abortController.signal
                         });
 
                         if (response.status === 401 || response.status === 402 || response.status === 429) {
-                            // Key exhausted or rate limited. Rotate key.
-                            console.warn("API Key Exhausted. Rotating...");
+                            console.warn(`Key ${_currentKeyIndex} exhausted. Rotating...`);
                             _currentKeyIndex = (_currentKeyIndex + 1) % _kData.length;
                             localStorage.setItem('gsca_key_idx', _currentKeyIndex);
                             retryCount++;
-                            continue; // Try again
+                            continue;
                         }
 
                         if (!response.ok) throw new Error("API Request Failed");
 
-                        success = true; // We connected!
+                        success = true;
                         const reader = response.body.getReader();
                         const decoder = new TextDecoder();
                         let buffer = '';
@@ -948,6 +1088,7 @@
                                 try {
                                     const json = JSON.parse(data);
                                     const delta = json.choices?.[0]?.delta?.content || '';
+                                    if (json.choices?.[0]?.finish_reason) { finishReason = json.choices[0].finish_reason; }
                                     if (delta) {
                                         fullContent += delta;
                                         proseEl.innerHTML = DOMPurify.sanitize(marked.parse(fullContent));
@@ -961,7 +1102,7 @@
                         if (error.name === 'AbortError') { showStatus('Generation Stopped', 'success'); break; } 
                         else if (!success && retryCount >= _kData.length - 1) {
                             showStatus(`Error: All API keys exhausted or network error.`, 'error');
-                            proseEl.innerHTML = `<span class="text-red-500">Failed to connect after rotating keys.</span>`;
+                            proseEl.innerHTML = `<span class="text-red-500">Network Error. Please try again later.</span>`;
                             break;
                         }
                     }
@@ -969,6 +1110,21 @@
 
                 proseEl.classList.remove('streaming-cursor');
                 aiMsg.content.text = fullContent || proseEl.innerText;
+                state.lastFinishReason = finishReason;
+
+                if (finishReason === 'length') {
+                    continueContainer.classList.remove('hidden');
+                    continueContainer.innerHTML = `<button onclick="continueGeneration('${aiMsgId}')" class="flex items-center gap-1 px-3 py-1.5 rounded-lg bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 text-xs font-semibold hover:bg-blue-200 dark:hover:bg-blue-800/40 transition"><span class="material-symbols-outlined text-[14px]">play_arrow</span> Continue Generating</button>`;
+                }
+
+                actionsDiv.style.opacity = '1';
+                const copyBtn = wrapper.querySelector('.copy-ai-btn');
+                const speakBtn = wrapper.querySelector('.speak-ai-btn');
+                const regenBtn = wrapper.querySelector('.regenerate-ai-btn');
+                if (copyBtn) copyBtn.onclick = () => copyText(aiMsgId);
+                if (speakBtn) speakBtn.onclick = () => speakText(proseEl.innerText);
+                if (regenBtn) regenBtn.onclick = () => regenerateMessage(aiMsgId);
+
                 addCodeCopyButtons(wrapper);
                 wrapper.querySelectorAll('pre code').forEach(block => { try { hljs.highlightElement(block); } catch (e) {} });
                 saveCurrentSession();
